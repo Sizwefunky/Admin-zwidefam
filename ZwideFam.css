@@ -833,6 +833,24 @@ nav {
   overflow-x: auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav ul {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+  .content {
+    font-size: 14px;
+  }
+}
+
+
 
 .menu-bar a:hover {
   color: #ff6600; /* orange hover */
