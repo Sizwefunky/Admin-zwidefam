@@ -800,6 +800,45 @@ header {
   align-items: center;
 }
 
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#menu-toggle {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+  #menu {
+    display: flex !important;
+    gap: 20px;
+  }
+}
+
+
 header nav a {
   color: #ff9800;
   margin: 0 1rem;
