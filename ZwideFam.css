@@ -850,6 +850,27 @@ nav ul {
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+  min-height: 80vh; /* ensures tall content */
+}
+
+footer {
+  margin-top: auto;
+}
+section, .content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 
 
 .menu-bar a:hover {
